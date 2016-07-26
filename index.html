@@ -42,18 +42,16 @@
     <main class="center-block">
 
       <div class="panel-title center">Cadastre-se</div>
-      <form class="login">
-        <a href="https://www.facebook.com/login"><img src="img/facebook.png" alt=""></a>
-        <div class="ou-line-decor">
-          <div class="line-decor"></div>
-          <div class="dim-text">OU</div>
-          <div class="line-decor"></div>
-        </div>
-        <input class="form-control" type="text" name="first_name" placeholder="First Name">
-        <input class="form-control" type="text" name="last_name" placeholder="Last Name">
-        <input class="form-control" type="email" name="email" placeholder="Email Address">
-        <input class="form-control" type="password" name="password" placeholder="Choose Password">
-        <input class="form-control" type="password" name="psw_confirm" placeholder="Password Confirm">
+      <form class="login" action="index.html" method="POST">
+        <a href="https://www.facebook.com/login">
+          <img src="img/facebook.png" alt="">
+        </a>
+        <div class="dl-decor center">OU</div>
+        <input class="form-control" type="text" name="first_name" placeholder="First Name" required>
+        <input class="form-control" type="text" name="last_name" placeholder="Last Name" required>
+        <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+        <input class="form-control" type="password" name="password" placeholder="Choose Password" required>
+        <input class="form-control" type="password" name="psw_confirm" placeholder="Password Confirm" required>
         <div class="checkbox">
           <label>
             <input type="checkbox"> Send me Youbike updates and tips
